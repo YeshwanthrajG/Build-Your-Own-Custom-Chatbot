@@ -1,0 +1,7 @@
+openai>=1.0.0
+pandas
+numpy
+python-dotenv
+jupyter
+tiktoken
+scikit-learn
