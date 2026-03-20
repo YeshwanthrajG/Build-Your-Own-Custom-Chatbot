@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <strong>A custom domain-expert chatbot built using Retrieval-Augmented Generation (RAG) — no fine-tuning required. Answers questions from a custom knowledge base with semantic search and LLM-powered responses.</strong>
+  <strong>A custom domain-expert chatbot built using Retrieval-Augmented Generation (RAG) - no fine-tuning required. Answers questions from a custom knowledge base with semantic search and LLM-powered responses.</strong>
 </p>
 
 </div>
@@ -39,7 +39,7 @@
 
 ## 🧠 Overview
 
-**Build Your Own Custom Chatbot** demonstrates how to create a domain-specific conversational AI agent using **Retrieval-Augmented Generation (RAG)** — without any model training or fine-tuning.
+**Build Your Own Custom Chatbot** demonstrates how to create a domain-specific conversational AI agent using **Retrieval-Augmented Generation (RAG)** - without any model training or fine-tuning.
 
 The key insight: rather than retraining an LLM on new data, RAG augments the model's prompt with dynamically retrieved, relevant context at inference time. This enables the chatbot to answer questions about any custom dataset accurately and up-to-date.
 
@@ -49,12 +49,12 @@ This project uses a custom knowledge base (e.g., sports statistics, company FAQs
 
 ## ✨ Features
 
-- 📚 **Bring-your-own dataset** — plug in any CSV/text knowledge base
-- 🔍 **Semantic search retrieval** — context-aware document matching via embeddings
-- 💬 **Conversational Q&A** — multi-turn dialogue with context memory
-- 🛡️ **Grounded responses** — answers sourced from real data, reducing hallucination
-- ⚙️ **No fine-tuning required** — fully RAG-based, fast to set up
-- 📓 **Notebook-first workflow** — clean, step-by-step Jupyter implementation
+- 📚 **Bring-your-own dataset** - plug in any CSV/text knowledge base
+- 🔍 **Semantic search retrieval** - context-aware document matching via embeddings
+- 💬 **Conversational Q&A** - multi-turn dialogue with context memory
+- 🛡️ **Grounded responses** - answers sourced from real data, reducing hallucination
+- ⚙️ **No fine-tuning required** - fully RAG-based, fast to set up
+- 📓 **Notebook-first workflow** - clean, step-by-step Jupyter implementation
 
 ---
 
@@ -161,20 +161,20 @@ jupyter notebook
 
 ## 🔍 How It Works
 
-**Step 1 — Dataset Preparation**
+**Step 1 - Dataset Preparation**
 Load your custom knowledge base into a pandas DataFrame with a `text` column. Each row represents a document, fact, or passage the chatbot can draw from.
 
-**Step 2 — Generate Embeddings**
+**Step 2 - Generate Embeddings**
 Each document is passed through OpenAI's embedding API to produce a dense vector representation. These embeddings capture semantic meaning beyond keywords.
 
-**Step 3 — Semantic Retrieval**
+**Step 3 - Semantic Retrieval**
 When a user asks a question, it is also embedded. Cosine similarity is computed between the query vector and all document vectors to retrieve the top-K most relevant passages.
 
-**Step 4 — Augmented Prompt Construction**
+**Step 4 - Augmented Prompt Construction**
 The retrieved passages are injected into the system prompt, giving the LLM accurate, relevant context before generating a response.
 
-**Step 5 — Response Generation**
-GPT-3.5/GPT-4 generates a grounded, coherent answer based on the augmented context — significantly reducing hallucination and keeping responses factually accurate.
+**Step 5 - Response Generation**
+GPT-3.5/GPT-4 generates a grounded, coherent answer based on the augmented context - significantly reducing hallucination and keeping responses factually accurate.
 
 ---
 
