@@ -211,7 +211,7 @@ Build-Your-Own-Custom-Chatbot/
 
 ## 📄 License
 
-This project is licensed under the [`LICENSE`](./LICENSE)**.
+This project is licensed under the [`LICENSE`](./LICENSE).
 
 ---
 
